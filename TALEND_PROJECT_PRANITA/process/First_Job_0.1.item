@@ -113,8 +113,9 @@
     <routinesParameter id="_NibJUH4CEe6E7vn8rV485g" name="TalendStringUtil"/>
     <routinesParameter id="_NiKqoH4CEe6E7vn8rV485g" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TIfvEH4EEe6qpP350o_T2Q"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
@@ -239,14 +240,17 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataprepRun_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://tdp.ap.cloud.talend.com/&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;pranita.p@predoolecom_nfr&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:9FFpQQ/CF71uXWdl/wke3ccSRhDmG2bmqIaAFcTgsq8Ww/kMV1zEVEYCzQ=="/>
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;a4756435-c308-4085-8351-98aafb5d6864&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" show="false" value="TALEND_PROJECT_PRANITA_First_Job_tDataprepRun_1_0.1_Default"/>
+    <elementParameter field="DP_VERSION" name="VERSION_NAME" value=""/>
+    <elementParameter field="TEXT" name="VERSION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="PREPARATION_PATH" show="false" value="&quot;folder/preparation&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_VERSION" show="false" value="&quot;Current state&quot;"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
@@ -266,22 +270,201 @@
       <column comment="" defaultValue="" key="false" length="-1" name="field10" nullable="false" originalDbColumnName="0010" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;20.204.123.250&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;Bank&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Pranita_Bank&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;qdimainuser&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NV09UL7HeNFEbdUaWPHkCuLrPEWNj6qVAxFNnXepz7FYeB5oY3+x6A+X"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_KuJZgIg3Ee6V2-91kLKQQg - CustomerDemographics"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CustomerDemographics&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT Bank.CustomerDemographics.CustomerID,&#10;&#9;&#9;Bank.CustomerDemographics.Name,&#10;&#9;&#9;Bank.CustomerDemographics.Age,&#10;&#9;&#9;Bank.CustomerDemographics.Gender,&#10;&#9;&#9;Bank.CustomerDemographics.Location,&#10;&#9;&#9;Bank.CustomerDemographics.Income,&#10;&#9;&#9;Bank.CustomerDemographics.Occupation,&#10;&#9;&#9;Bank.CustomerDemographics.MaritalStatus,&#10;&#9;&#9;Bank.CustomerDemographics.AccountType,&#10;&#9;&#9;Bank.CustomerDemographics.CreditScore&#10;FROM&#9;Bank.CustomerDemographics&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Age"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Location"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Income"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Occupation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MaritalStatus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreditScore"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustomerDemographics" name="tDBInput_1">
+      <column comment="" key="true" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Name" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Age" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Gender" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Location" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="24" name="Income" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Occupation" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="MaritalStatus" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="AccountType" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CreditScore" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBigQueryOutput_1"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="bigquery_id"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/Talend/biquery_bulk.txt&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
+    <elementParameter field="PASSWORD" name="ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:XF6NDfvX6Bc2rasx282Uf8l5/f8KH+54Pd4lr3c8"/>
+    <elementParameter field="LABEL" name="ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;C:/Users/Laptop_User/Downloads/replicate-40-7d7a23ff43b3.json&quot;"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:hr2BfNNYrYHfSe6pWN1m2CK1OjdXcB9yvi8HOFdK"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;replicate-40&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;Pranita_Bank&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;Customers_Demography&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
+    <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="GS_SERVICE_ACCOUNT"/>
+    <elementParameter field="FILE" name="GS_SERVICE_ACCOUNT_KEY" value="&quot;{&quot;"/>
+    <elementParameter field="PASSWORD" name="GS_ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:3uKMV10N05HzkraN049nV2AmCZybBxvRzajm52bD"/>
+    <elementParameter field="LABEL" name="GS_ACCESS_TOKEN_WARNING" show="false" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" value="false"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT_GS" show="false" value="&quot;https://storage.googleapis.com&quot;"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT_BQ" show="false" value="&quot;https://bigquery.googleapis.com&quot;"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;E:/Talend/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="USE_12_HOUR_FORMAT" value="false"/>
+    <elementParameter field="CHECK" name="SET_FIELD_DELIMITER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_DELIMITER" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="DROP" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_NULL_MARKER" value="false"/>
+    <elementParameter field="TEXT" name="CUSTOM_NULL_MARKER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CustomerDemographics" name="tBigQueryOutput_1">
+      <column comment="" key="true" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Name" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Age" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Gender" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Location" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="24" name="Income" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Occupation" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="MaritalStatus" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="AccountType" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CreditScore" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tDataprepRun_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tBigQueryOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_07115664-3a9d-448d-8923-e6fde41565e9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6UeDdOwtSG6FQxeX3FMqILaanNGf8UIOGGgSkRp3ZAuQs1uO+q/SdnXZJ8pdTBybJK/hJS5ch7Wa&#13;
-o+rGpbiDnA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_319dcf04-a82e-4200-b3ef-725629643cff"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G4rpJmFPGiDFF2KAA1jpPh40b1H460rhMeRed7W+2/m/pGRCKpjNCG3dZKZCLrllK32x6JYwXGFN&#13;
-SNseuyl8zg==</DigestValue></Reference></SignedInfo><SignatureValue>I68PxHBL/0HPBBtyU3xR7TEOPWfWDlr2VUpA4shI+P64nTeUjaUcviJvqoO1Xe+VLWxVhFFN3sUa&#13;
-rAI7xT3R1r51xgm0HuMYT4nLX7FfoxjN7vJLbYGhugG3uPnBXNfGSYieQ3njgyLPelcf95T6WKLd&#13;
-vCf6r727hrVu5jiUYhNkbFMZDNC84W+fAo9FNf0n9NcJ0KJ390P7zMYv+fLRQawpg6v2IynBEqT8&#13;
-WgiiBC0LG9lu1U085zWKi78DgvOxLvIwMHV3DTU5QcJc1yeP0Rt8aKcq33wyziSVAU3KBIgx3L1f&#13;
-faEPYVXYWK7ufNMA7oGygKXobNuiHI6NK0nPnQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_21ffce71-d200-461b-94af-5609c29fb973"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nzLfKY64iZfXcpKnE0tgvCYiq2X33PUexU+YxakHPeHTHq++czkPffJMLe0mmk9guAUdfK5yaorb&#13;
+WpHLMoeghw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eccdc880-86ed-4790-906f-d237a1ded377"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iIbkCDqGl0raRi2TlWCd5b6BV6GZJiPv5b8qSRFz2TZiu+oGz2T1Rr59eJEb3nASqEKHanS8xWfw&#13;
+aQRvxG/ClQ==</DigestValue></Reference></SignedInfo><SignatureValue>mcJuLh04a/UBzjejmtO+dFcrWp9hnE32OLAik7lmslVyO8aptiO55E+IWBf1L6xSxcwCCZ+trcGb&#13;
+deaegRvjor72WogtpIchmj1GJVE576L496o4JDqsm2gFKL1Cip1LpO78XSffq20T9sPgSmkXEOLe&#13;
+PrE1ec8cNsjD7d/J3fl+ujoMkUpXWzyrRGa3PrpObsNclgtShx25pDORUBrCfmWQbYCpinu8+3JX&#13;
+TIGP9FZx34/ms3Blkz7b8y0Gobce3Nq0jwqInKasKXdpM8nHY+xQLeFJa1fBI05fJis1gYkxZ+59&#13;
+z9rc7yeZURfDtk0vzLvBEMA1bLvNDYTQSQK6Yw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -303,4 +486,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_319dcf04-a82e-4200-b3ef-725629643cff" Target="#_07115664-3a9d-448d-8923-e6fde41565e9"><Timestamp>2023-11-08 09:17:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eccdc880-86ed-4790-906f-d237a1ded377" Target="#_21ffce71-d200-461b-94af-5609c29fb973"><Timestamp>2023-11-21 07:01:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
