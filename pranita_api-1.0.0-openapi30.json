@@ -1,0 +1,54 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Pranita_API",
+    "description" : "No description",
+    "contact" : { },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json"
+  } ],
+  "paths" : {
+    "/lists/full-overview.json" : { },
+    "/lists/current/hardcover-fiction.json?api-key=lBnwAJWZX3T09RIIB3NpwyYLId1KSeDm" : {
+      "get" : {
+        "summary" : "Best Sellers lists",
+        "description" : "Get all books for all the Best Sellers lists for specified date.",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "age-group" : {
+        "type" : "string"
+      },
+      "author" : {
+        "type" : "string"
+      },
+      "contributor" : {
+        "type" : "string"
+      },
+      "isbn" : {
+        "type" : "string"
+      },
+      "offset" : {
+        "type" : "integer"
+      },
+      "price" : {
+        "type" : "integer"
+      },
+      "publisher" : {
+        "type" : "string"
+      },
+      "title" : {
+        "type" : "string"
+      }
+    }
+  }
+}
