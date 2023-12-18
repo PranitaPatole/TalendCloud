@@ -3,6 +3,7 @@
     <contextParameter comment="" internalId="_X5Og4JjkEe6yTNrq-XJoKA" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;ap-south-1&quot;"/>
   </context>
   <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -165,16 +166,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server"/>
-    <elementParameter field="CHECK" name="START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="D:\Talend_New\studio\configuration\lib\java"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tDBConnection_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -225,16 +216,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="D:\Talend_New\studio\configuration\lib\java"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tDBConnection_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -309,17 +290,7 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server"/>
-    <elementParameter field="CHECK" name="START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="D:\Talend_New\studio\configuration\lib\java"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
@@ -472,16 +443,6 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlConnection"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server|ELT/Connections"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlConnection"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="D:\Talend_New\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_-QJccJi4Ee6dfJI3jxbYBw"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
@@ -503,6 +464,7 @@
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
     <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tS3Put" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Put_1"/>
@@ -517,7 +479,7 @@
     <elementParameter field="TEXT" name="ARN" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="ROLE_SESSION_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SESSION_DURATION" show="false" value="15"/>
-    <elementParameter field="OPENED_LIST" name="REGION" value="&quot;eu-north-1&quot;"/>
+    <elementParameter field="OPENED_LIST" name="REGION" value="&quot;ap-south-1&quot;"/>
     <elementParameter field="CHECK" name="ENCRYPT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="KEY_TYPE" show="false" value="KMS_CMK"/>
     <elementParameter field="CLOSED_LIST" name="ALGORITHM_SYMMETRIC_MASTER_KEY" show="false" value="AES"/>
@@ -624,13 +586,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_986129c4-8998-4512-94b7-0ae1b102f671"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iK6lY67Bs1ROB9qSzedd4h94xNEHkx6Dh1O92a8hmnnze84U27BupxIOH9XzR4AyLdRMHQq/Qarv&#13;
-hPLC1oQwag==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7fa400fc-6b25-4165-a524-264c679c997d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IaplcBklh9++eZ1FmfFXcVh+rq6MRTTwAmvsV/GRVKR/iivGG3iqV51hNfIK61JfmwJTSdA6f9Ub&#13;
-cEaobmQv2A==</DigestValue></Reference></SignedInfo><SignatureValue>OR+Ej4kOhDE2nQ3b16igZU+j3zskxLWrncfKMBeRM1E3epXikF5F09sW1blFkJZH6i4tevLAMoLw&#13;
-LVf7AED8CGOtgVmd1DUPMdl1vlS4wdM8EAObUoGa/upZ5+Eaj17DXwLWD4h6RxjlfhHT7sllCTw1&#13;
-F83PZNG/6OICzsjFzBUk3JYfe2NgZUQXOASwHsCWqbycFW9N5aY67a7e97onie8tg4Tez4w2VNzP&#13;
-bxyEfqD91cTqnqOJEcu6TTzPH0D5oAaczhMwC6wpG5rtUxc0hsYUTnqzNY7mvEl5uEhhS3Bv6G7j&#13;
-7l0vRWy2gRQQKKePL4tM7WdyRIi29JoNRaNUJg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fe366161-4d45-4cd5-b750-e665b833071a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8jFV4vRyXXCB9VLl8rTJT6drtbWHPYv9aTwXALz3T9R7A5+p69QGbuMvTI4Ga6DKstrqGFNDP8GA&#13;
+ht+Z6vN3iQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4686a2d3-2de7-4708-9ae0-f224579d0a74"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9P3SsW1GNfQaslcH0suc4UbepzO/718kGFtnCuegtvOZKhmOu8JtrRfodfuIGixG6av0/yffBeTF&#13;
+Rm1KegTzkg==</DigestValue></Reference></SignedInfo><SignatureValue>JgBA5ai7oYf9F1in31p8CzHOVWGX6zOSuE9Rjv3DcjsTKkAx2LAZwyeeC+LcvU8TSkxGHejFm20b&#13;
+5AyLLkrLdTe42haeciy/EHRRape8p5sQDGrUqcIGWLAYq5RuxNIz3+2iRolrDm9ow5GOYoYoH0AV&#13;
+ibq9SDj1pUbM/eHomNeFzC1Ll+TtoQKiUkmBNVFb/8YsFjo19TePatJPWL1Wk7Esn9SRCD2Pq+Az&#13;
+lNT35QL3Vl3lCAwzFworZYYHFb7MyzM2cHknNNkMcrU3aVaXFI9J1YkbzdHR1TwdkLupjM9pG3ru&#13;
+/M+17iKc8MS7Ey/rxGdn3DrwNB6pRYGRUOOVVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -652,4 +614,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7fa400fc-6b25-4165-a524-264c679c997d" Target="#_986129c4-8998-4512-94b7-0ae1b102f671"><Timestamp>2023-12-12 12:25:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4686a2d3-2de7-4708-9ae0-f224579d0a74" Target="#_fe366161-4d45-4cd5-b750-e665b833071a"><Timestamp>2023-12-13 04:57:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
