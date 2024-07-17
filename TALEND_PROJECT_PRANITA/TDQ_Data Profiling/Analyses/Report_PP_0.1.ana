@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <dataquality.analysis:Analysis xmi:id="_zTheEEBBEe-0eILAJnvxAA" name="Report_PP" supplierDependency="_gfJjoEBCEe-0eILAJnvxAA" creationDate="2024-07-12T16:58:03.042+0530" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Pranita/newConn/Pharma_connection_0.1.item#_zS6aEEBBEe-0eILAJnvxAA"/>
+    <taggedValue xmi:id="_zTheEUBBEe-0eILAJnvxAA" tag="Status" value="testing"/>
+    <taggedValue xmi:id="_zTheEkBBEe-0eILAJnvxAA" tag="Author" value="pranita.p@predoolecom_nfr"/>
+    <taggedValue xmi:id="_zTheE0BBEe-0eILAJnvxAA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_zTheFEBBEe-0eILAJnvxAA" tag="Description" value=""/>
+    <taggedValue xmi:id="_zTheFUBBEe-0eILAJnvxAA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_6QTqAUBBEe-0eILAJnvxAA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_6QUREEBBEe-0eILAJnvxAA" tag="Reload Databases" value="true"/>
+    <taggedValue xmi:id="_6QZJkEBBEe-0eILAJnvxAA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_zTheFkBBEe-0eILAJnvxAA">
+      <connection href="../../metadata/connections/Pranita/newConn/Pharma_connection_0.1.item#_1QIroEAIEe-arI8L18ablw"/>
+      <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/Pranita/newConn/Pharma_connection_0.1.item#_1QIroEAIEe-arI8L18ablw"/>
+    </context>
+    <results xmi:id="_zTheF0BBEe-0eILAJnvxAA">
+      <resultMetadata xmi:id="_zTheGEBBEe-0eILAJnvxAA" executionDate="2024-07-12T17:06:57.592+0530" executionDuration="401" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
+      <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_zTheGUBBEe-0eILAJnvxAA" computed="true" tableCount="1" keyCount="2" indexCount="2" tableRowCount="90" catalogCount="1">
+        <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/Pranita/newConn/Pharma_connection_0.1.item#_1QIroEAIEe-arI8L18ablw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
+        <catalogIndicators xmi:id="_C_ubwEBDEe-0eILAJnvxAA" tableCount="1" keyCount="2" indexCount="2" tableRowCount="90" schemaCount="1">
+          <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/Pranita/newConn/Pharma_connection_0.1.item#_1Y93gEAIEe-arI8L18ablw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+          <schemaIndicators xmi:id="_C_ubwUBDEe-0eILAJnvxAA" tableCount="1" keyCount="2" indexCount="2" tableRowCount="90">
+            <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Pranita/newConn/Pharma_connection_0.1.item#_-DOR70AIEe-arI8L18ablw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+            <tableIndicators xmi:id="_C_ubwkBDEe-0eILAJnvxAA" rowCount="90" tableName="drugs_adv" keyCount="2" indexCount="2">
+              <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+            </tableIndicators>
+          </schemaIndicators>
+        </catalogIndicators>
+      </indicators>
+    </results>
+    <parameters xmi:id="_zTheHEBBEe-0eILAJnvxAA" dataFilter="_6RR6YEBBEe-0eILAJnvxAA" analysisType="Connection Analysis"/>
+    <contextType xmi:id="_6QTqAEBBEe-0eILAJnvxAA" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_gfJjoEBCEe-0eILAJnvxAA" kind="Usage" supplier="_zTheEEBBEe-0eILAJnvxAA">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/gku_0.1.rep#_H2dWoEBCEe-0eILAJnvxAA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+  <dataquality.domain:Domain xmi:id="_6RR6YEBBEe-0eILAJnvxAA" name="Analysis Data Filter" patterns="_6RTIgEBBEe-0eILAJnvxAA _6RTIg0BBEe-0eILAJnvxAA">
+    <ownedElement xsi:type="dataquality.domain.pattern:Pattern" xmi:id="_6RTIgEBBEe-0eILAJnvxAA" name="Table Pattern">
+      <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_6RTIgUBBEe-0eILAJnvxAA">
+        <expression xmi:id="_6RTIgkBBEe-0eILAJnvxAA" body="drugs_adv"/>
+      </components>
+    </ownedElement>
+    <ownedElement xsi:type="dataquality.domain.pattern:Pattern" xmi:id="_6RTIg0BBEe-0eILAJnvxAA" name="View Pattern">
+      <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_6RTIhEBBEe-0eILAJnvxAA">
+        <expression xmi:id="_6RTIhUBBEe-0eILAJnvxAA" body=""/>
+      </components>
+    </ownedElement>
+  </dataquality.domain:Domain>
+</xmi:XMI>

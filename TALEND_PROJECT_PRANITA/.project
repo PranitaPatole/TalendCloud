@@ -10,4 +10,11 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>.reportByPranita-20240712-1707-00000.pdf</name>
+			<type>1</type>
+			<location>E:/TalendDatasets/reportByPranita-20240712-1707-00000.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>

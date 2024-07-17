@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.reports="http://dataquality.reports" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_H2dWoEBCEe-0eILAJnvxAA" name="gku" creationDate="2024-07-12T17:00:20.976+0530" defaultContext="Default">
+  <clientDependency href="../Analyses/Report_PP_0.1.ana#_gfJjoEBCEe-0eILAJnvxAA"/>
+  <taggedValue xmi:id="_H2dWoUBCEe-0eILAJnvxAA" tag="Status" value="testing"/>
+  <taggedValue xmi:id="_H2dWokBCEe-0eILAJnvxAA" tag="Author" value="pranita.p@predoolecom_nfr"/>
+  <taggedValue xmi:id="_H2dWo0BCEe-0eILAJnvxAA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_H2dWpEBCEe-0eILAJnvxAA" tag="Description" value=""/>
+  <taggedValue xmi:id="_H2dWpUBCEe-0eILAJnvxAA" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_H2dWpkBCEe-0eILAJnvxAA" tag="OutputFolder" value="E:\TalendDatasets"/>
+  <taggedValue xmi:id="_H2dWp0BCEe-0eILAJnvxAA" tag="REP_DBINFO_DBTYPE" value="Microsoft SQL Server"/>
+  <taggedValue xmi:id="_H2dWqEBCEe-0eILAJnvxAA" tag="REP_DBINFO_DBVERSION" value="JTDS"/>
+  <taggedValue xmi:id="_H2dWqUBCEe-0eILAJnvxAA" tag="REP_DBINFO_HOST" value="20.204.123.250"/>
+  <taggedValue xmi:id="_H2dWqkBCEe-0eILAJnvxAA" tag="REP_DBINFO_PORT" value="1433"/>
+  <taggedValue xmi:id="_H2dWq0BCEe-0eILAJnvxAA" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_H2dWrEBCEe-0eILAJnvxAA" tag="REP_DBINFO_DBNAME" value="Pranita_DB"/>
+  <taggedValue xmi:id="_H2dWrUBCEe-0eILAJnvxAA" tag="REP_DBINFO_SCHEMA" value="dbo"/>
+  <taggedValue xmi:id="_H2dWrkBCEe-0eILAJnvxAA" tag="REP_DBINFO_USER" value="qdimainuser"/>
+  <taggedValue xmi:id="_H2dWr0BCEe-0eILAJnvxAA" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:GqvXPVDAa9RIzuYLaf0EWMHleQ6H1lFI0oIZApslHNBPuLLIujUpkQ=="/>
+  <taggedValue xmi:id="_H2dWsEBCEe-0eILAJnvxAA" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_H2dWsUBCEe-0eILAJnvxAA" tag="REP_DBINFO_URL" value="jdbc:jtds:sqlserver://20.204.123.250:1433/Pranita_DB;"/>
+  <taggedValue xmi:id="_H2dWskBCEe-0eILAJnvxAA" tag="REP_DBINFO_DRIVER" value="net.sourceforge.jtds.jdbc.Driver"/>
+  <taggedValue xmi:id="_H2dWs0BCEe-0eILAJnvxAA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.SQLServerDialect"/>
+  <taggedValue xmi:id="_H2dWtEBCEe-0eILAJnvxAA" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_gdYpEEBCEe-0eILAJnvxAA" tag="OutputFileName" value="reportByPranita"/>
+  <taggedValue xmi:id="_gdYpEUBCEe-0eILAJnvxAA" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_gdYpEkBCEe-0eILAJnvxAA" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_gdYpE0BCEe-0eILAJnvxAA" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_gfEEEUBCEe-0eILAJnvxAA" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <presentationParams xmi:id="_gemxEEBCEe-0eILAJnvxAA" type="TOP_MIDDLE_PRESENTATIONKEY">
+    <formula xmi:id="_mTDb8EBCEe-0eILAJnvxAA">
+      <expression xsi:type="relational:TdExpression" xmi:id="_mTDb8UBCEe-0eILAJnvxAA" body="Creation Date"/>
+    </formula>
+  </presentationParams>
+  <presentationParams xmi:id="_gfDdAUBCEe-0eILAJnvxAA" type="TOP_LEFT_PRESENTATIONKEY">
+    <formula xmi:id="_gfDdAkBCEe-0eILAJnvxAA">
+      <expression xsi:type="relational:TdExpression" xmi:id="_gfDdA0BCEe-0eILAJnvxAA" body="Page Number"/>
+    </formula>
+  </presentationParams>
+  <presentationParams xmi:id="_gfDdBEBCEe-0eILAJnvxAA" type="TOP_RIGHT_PRESENTATIONKEY">
+    <formula xmi:id="_gfDdBUBCEe-0eILAJnvxAA">
+      <expression xsi:type="relational:TdExpression" xmi:id="_gfDdBkBCEe-0eILAJnvxAA" body="Creation Date"/>
+    </formula>
+  </presentationParams>
+  <analysisMap xmi:id="_gfGgUEBCEe-0eILAJnvxAA" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Report_PP_0.1.ana#_zTheEEBBEe-0eILAJnvxAA"/>
+  </analysisMap>
+  <ExecInformations xmi:id="_C_4z0EBDEe-0eILAJnvxAA" executionDate="2024-07-12T17:06:57.589+0530" executionDuration="407" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+  <context xmi:id="_gfEEEEBCEe-0eILAJnvxAA" confirmationNeeded="false" hide="false" name="Default"/>
+</dataquality.reports:TdReport>

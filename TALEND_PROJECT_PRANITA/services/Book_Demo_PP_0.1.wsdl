@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="Book_Demo_PP"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="Book_Demo_PPOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="bookID" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Book_Demo_PPOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="title" type="xsd:string"></xsd:element>
+						<xsd:element name="author" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="publisher"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="publishdate"
+							type="xsd:date">
+						</xsd:element>
+						<xsd:element name="page" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="price"
+							type="xsd:double">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="Book_Demo_PPOperationRequest">
+		<wsdl:part name="parameters" element="tns:Book_Demo_PPOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="Book_Demo_PPOperationResponse">
+		<wsdl:part name="parameters" element="tns:Book_Demo_PPOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="Book_Demo_PPPortType">
+		<wsdl:operation name="Book_Demo_PPOperation">
+			<wsdl:input message="tns:Book_Demo_PPOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:Book_Demo_PPOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="Book_Demo_PPBinding" type="tns:Book_Demo_PPPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="Book_Demo_PPOperation">
+			<soap:operation soapAction="http://www.talend.org/service/Book_Demo_PPOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="Book_Demo_PP">
+		<wsdl:port name="Book_Demo_PPPort" binding="tns:Book_Demo_PPBinding">
+			<soap:address location="http://localhost:8090/services/Book_Demo_PP" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

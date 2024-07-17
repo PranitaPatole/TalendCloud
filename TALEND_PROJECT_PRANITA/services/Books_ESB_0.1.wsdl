@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="Books_ESB"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="Books_ESBOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="bookID" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Books_ESBOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="title" type="xsd:string"></xsd:element>
+						<xsd:element name="author" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="publisher"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="publishDate"
+							type="xsd:date">
+						</xsd:element>
+						<xsd:element name="pages" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="price"
+							type="xsd:double">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="Books_ESBOperationRequest">
+		<wsdl:part name="parameters" element="tns:Books_ESBOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="Books_ESBOperationResponse">
+		<wsdl:part name="parameters" element="tns:Books_ESBOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="Books_ESBPortType">
+		<wsdl:operation name="Books_ESBOperation">
+			<wsdl:input message="tns:Books_ESBOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:Books_ESBOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="Books_ESBBinding" type="tns:Books_ESBPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="Books_ESBOperation">
+			<soap:operation soapAction="http://www.talend.org/service/Books_ESBOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="Books_ESB">
+		<wsdl:port name="Books_ESBPort" binding="tns:Books_ESBBinding">
+			<soap:address location="http://localhost:8090/services/Books_ESB" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
